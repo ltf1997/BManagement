@@ -1,10 +1,10 @@
 import React,{Component} from 'react'
 
-class Nav extends Component {
+class Home extends Component {
   render(){
     return(
-      <div>导航</div>
+      <div>首页</div>
     )
   }
 }
-export default Nav
+export default Home
