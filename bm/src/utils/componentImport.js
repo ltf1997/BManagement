@@ -1,10 +1,12 @@
 import React from 'react'
 import Loadable from 'react-loadable'
+import { Spin, Icon } from 'antd'
+import '../style/index.less'
 //loadable是一个高阶组件
-
+const antIcon = <Icon type="loading" style={{ fontSize: 24 }} spin />
 const loadingComponent = ()=>{
   return(
-    <div>loading</div>
+    <div className="loading"><Spin indicator={antIcon} /></div>
   )
 }
 
