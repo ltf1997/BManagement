@@ -1,14 +1,16 @@
 import React, {Component} from 'react'
 import {HashRouter,Route,withRouter,Switch,Redirect} from 'react-router-dom'
-import Login from './component/login'
-import Reg from './component/reg'
-import Admin from './component/admin'
-import UserList from './component/user'
-import UserAdd from './component/userAdd'
-import Home from './component/home'
-import OrderList from './component/order'
-import OrderAdd from './component/orderAdd'
-import OrderNo from './component/orderNo'
+import ComponentImport from './utils/componentImport'
+const Login = ComponentImport(()=>import('./component/login'))
+const Reg = ComponentImport(()=>import('./component/reg'))
+const Admin = ComponentImport(()=>import('./component/admin'))
+const UserList = ComponentImport(()=>import('./component/user'))
+const UserAdd = ComponentImport(()=>import('./component/userAdd'))
+const Home = ComponentImport(()=>import('./component/home'))
+const OrderList = ComponentImport(()=>import('./component/order'))
+const OrderAdd = ComponentImport(()=>import('./component/orderAdd'))
+const OrderNo = ComponentImport(()=>import('./component/orderNo'))
+
 
 class RootRouter extends Component{
   render(){
